@@ -1,0 +1,19 @@
+server:
+  port: 8081
+  
+endpoints:
+  restart:
+    enabled: true
+    
+logging:
+  level:
+    org.apache.zookeeper.ClientCnxn: WARN
+    
+spring:
+   cloud:
+      zookeeper:
+         enabled : true
+         connect-string : 127.0.0.1:2181
+         config.watcher.enabled: true
+         
+         

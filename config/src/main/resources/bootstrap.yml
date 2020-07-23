@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    zookeeper:
+      config:
+        enabled: true
+        root: /config
+        defaultContext: helloApp1
+        profileSeparator: '::'
