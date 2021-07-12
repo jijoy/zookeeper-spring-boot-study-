@@ -21,5 +21,11 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+    - name: Build Config with Maven
+      run: mvn -B package --file config/pom.xml
+    - name: Build Consumer with Maven
+      run: mvn -B package --file consumer/pom.xml
+    - name: Build Producer with Maven
+      run: mvn -B package --file producer/pom.xml
+    - name: Build Worker with Maven
+      run: mvn -B package --file worker/pom.xml
